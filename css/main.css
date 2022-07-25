@@ -22,8 +22,7 @@ html {
     line-height: 1.4;
 	/* background-color: #FFF; */
   background-color: #222;
-  font-family: 'Roboto Slab', serif;
-     word-spacing: 2px;
+  font-family: 'Lora', serif;     word-spacing: 2px;
 
 }
 
@@ -376,8 +375,8 @@ a {
 }
 
 p {
-  font-family: 'Roboto Slab', serif;
-     font-size: 18px;
+  font-family: 'Lora', serif;
+       font-size: 16px;
   margin: 10px 0;
   word-spacing: 2px;
 }
@@ -1783,8 +1782,8 @@ h2 {
 }
 
 .logo-border {
-  font-size: 2.3em;
-  border: 8px solid white;
+  font-size: 3em;
+  border: 0px solid white;
   padding: 18px 10px;
   /* border-style: solid dashed; */
   font-weight: 600;
@@ -1792,35 +1791,31 @@ h2 {
   width: fit-content;
   text-align: center;
   margin: 0 auto 0.5em;
-
-  box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
-
   animation: pulsate 0.11s ease-in-out infinite alternate;    
+  font-family: 'Yellowtail', cursive;
 }
 
 @keyframes pulsate {
   100% {
-    /* Larger blur radius */
     text-shadow:
       0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px #f09,
-      0 0 80px #f09,
-      0 0 90px #f09,
-      0 0 100px #f09,
-      0 0 150px #f09;
+      /* 0 0 11px #fff,
+      0 0 19px #fff, */
+      0 0 40px #5271ff,
+      0 0 80px #5271ff,
+      0 0 90px #5271ff,
+      0 0 100px #5271ff,
+      0 0 150px #5271ff;
   }
  0% {
-    /* A slightly smaller blur radius */
     text-shadow:
       0 0 4px #fff,
-      0 0 10px #fff,
-      0 0 18px #fff,
-      0 0 38px #f09,
-      0 0 73px #f09,
-      0 0 80px #f09,
-      0 0 94px #f09,
-      0 0 140px #f09;
+      /* 0 0 10px #fff,
+      0 0 18px #fff, */
+      0 0 38px #5271ff,
+      0 0 73px #5271ff,
+      0 0 80px #5271ff,
+      0 0 94px #5271ff,
+      0 0 140px #5271ff;
   }
 }
