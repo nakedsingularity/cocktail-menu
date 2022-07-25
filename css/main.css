@@ -22,8 +22,8 @@ html {
     line-height: 1.4;
 	/* background-color: #FFF; */
   background-color: #222;
-  font-family: 'Montserrat', sans-serif;
-  word-spacing: 2px;
+  font-family: 'Roboto Slab', serif;
+     word-spacing: 2px;
 
 }
 
@@ -376,8 +376,8 @@ a {
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+     font-size: 18px;
   margin: 10px 0;
   word-spacing: 2px;
 }
@@ -710,7 +710,7 @@ ul {
 
 @media screen and (max-width: 960px) {
   .transparent {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 
   html {
@@ -803,7 +803,7 @@ ul {
 }
 
 #intro {
-  filter: saturate(0.6) hue-rotate(0deg);
+  filter: saturate(0.3) hue-rotate(0deg);
 }
 
 #intro, #clouds, #sun, #buildings, #cloud1, #cloud2, #cloud3 {
@@ -884,7 +884,7 @@ ul {
 }
 
 #intro {
-background-image: url('back3.png');
+background-image: url('hero.jpg');
 }
 
 #cloud1 {
@@ -976,6 +976,10 @@ background-image: url('back3.png');
   color: #7b7b7b
 }
 
+.recipe_trigger {
+  font-size: 20px;
+}
+
 
 .member:first-child {
   padding-left: 0;
@@ -1004,13 +1008,13 @@ background-image: url('back3.png');
 
 .gallery-wrap, .team-wrap, .logo-list {
   margin-top: 10px;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 margin-bottom: 1em;
 }
 
 .divider {
-  margin: 0em 0 3em;
-  border-top: 2px dashed #575757;
+  margin: 0em 0 2em;
+  border-top: 2px dashed #7b7b7b;
 }
 
 .charity-faq {
@@ -1781,11 +1785,42 @@ h2 {
 .logo-border {
   font-size: 2.3em;
   border: 8px solid white;
-  padding: 4px 10px;
-  border-style: solid dashed;
-  font-weight: 900;
+  padding: 18px 10px;
+  /* border-style: solid dashed; */
+  font-weight: 600;
   text-transform: uppercase;
   width: fit-content;
   text-align: center;
   margin: 0 auto 0.5em;
+
+  box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+
+  animation: pulsate 0.11s ease-in-out infinite alternate;    
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  }
+ 0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #f09,
+      0 0 73px #f09,
+      0 0 80px #f09,
+      0 0 94px #f09,
+      0 0 140px #f09;
+  }
 }

@@ -113,90 +113,10 @@ $(document).ready(function(){
         }, 
       });
 
-      // gsap.to(".pVodka", {
-      //   yPercent: 2500,
-      //   xPercent: 20,
-      //   rotate: 2500,
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: "#intro",
-      //     start: "top top", // the default values
-      //     end: "bottom top",
-      //     scrub: true
-      //   }, 
-      // });
-
-      // gsap.to(".pVodka2", {
-      //   yPercent: 2000,
-      //   xPercent: -50,
-      //   rotate: -2000,
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: "#intro",
-      //     start: "top top", // the default values
-      //     end: "bottom top",
-      //     scrub: true
-      //   }, 
-      // });
-
-      // gsap.to(".hover-item1", {
-      //   yPercent: 25,
-      //   // xPercent: -50,
-      //   rotate: 10,
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: "#intro",
-      //     start: "top top", // the default values
-      //     end: "bottom top",
-      //     scrub: true
-      //   }, 
-      // });
-
-      // gsap.to(".hover-item2", {
-      //   yPercent: 50,
-      //   // xPercent: -50,
-      //   rotate: 10,
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: "#gallery",
-      //     start: "top bottom", // the default values
-      //     end: "bottom top",
-      //     scrub: true
-      //   }, 
-      // });
-
-      // gsap.to(".hover-item3", {
-      //   yPercent: 350,
-      //   // xPercent: -50,
-      //   rotate: 900,
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: ".roadmap-wrap",
-      //     start: "top center", // the default values
-      //     end: "bottom center",
-      //     scrub: true
-      //   }, 
-      // });
-
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: "#about .img",
-          start: "center bottom",
-          end: "bottom center",
-          scrub: true
-        }
-      })
-      // .from(".ussr",  { opacity: 0 })
-      .from(".ussr",  { x: innerWidth * (-0.5), ease: "expo" })
-      .from(".glasses",  { y: innerHeight * 0.5, ease: "expo" })
-      .from(".hair", { y: innerHeight * (-0.5), ease: "expo" })
-      .from(".ak", { x: innerWidth * 0.5, ease: "expo" })
-      .from(".cross", { y: innerHeight * 0.5, ease: "expo" });
-
 
       let tl = gsap.timeline({
         scrollTrigger: {
-          trigger: '#about .transparent',
+          trigger: '.slide-in',
           start: "bottom bottom",
         }
       });
@@ -204,7 +124,7 @@ $(document).ready(function(){
 
       let tl2 = gsap.timeline({
         scrollTrigger: {
-          trigger: '#gallery .transparent',
+          trigger: '.slide-in2',
           start: "bottom bottom",
         }
       });
@@ -212,7 +132,7 @@ $(document).ready(function(){
 
       let tl3 = gsap.timeline({
         scrollTrigger: {
-          trigger: '#charity .transparent',
+          trigger: '.slide-in3',
           start: "bottom bottom",
         }
       });
@@ -220,95 +140,27 @@ $(document).ready(function(){
 
       let tl4 = gsap.timeline({
         scrollTrigger: {
-          trigger: '#team .transparent',
+          trigger: '.slide-in4',
           start: "bottom bottom",
         }
       });
-      tl4.from(".slide-in4", {y:20, opacity: 0, duration: 0.3});
+      tl4.from(".slide-in4", {y:20, opacity: 0, duration: 0.3})
 
-
-      gsap.to(".pGallery", {
-        xPercent: -300,
-        ease: "none",
+      let tl5 = gsap.timeline({
         scrollTrigger: {
-          trigger: ".gallery-wrap",
-          start: "top bottom", // the default values
-          end: "bottom top",
-          scrub: true
-        }, 
+          trigger: '.slide-in5',
+          start: "bottom bottom",
+        }
       });
+      tl4.from(".slide-in5", {y:20, opacity: 0, duration: 0.3})
 
-      gsap.to(".pGalleryReverse", {
-        xPercent: 300,
-        ease: "none",
+      let tl6 = gsap.timeline({
         scrollTrigger: {
-          trigger: ".gallery-wrap",
-          start: "top bottom", // the default values
-          end: "bottom top",
-          scrub: true
-        }, 
+          trigger: '.slide-in6',
+          start: "bottom bottom",
+        }
       });
-
-      // gsap.to(".pGallery2", {
-      //   xPercent: -600,
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: ".gallery-wrap",
-      //     start: "top bottom", // the default values
-      //     end: "bottom top",
-      //     scrub: true
-      //   }, 
-      // });
-      
-
-//       // Select all links with hashes
-// $('a[href*="#"]')
-// // Remove links that don't actually link to anything
-// .not('[href="#"]')
-// .not('[href="#0"]')
-// .click(function(event) {
-//   // On-page links
-//   if (
-//     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-//     && 
-//     location.hostname == this.hostname
-//   ) {
-//     // Figure out element to scroll to
-//     var target = $(this.hash);
-//     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-//     // Does a scroll target exist?
-//     if (target.length) {
-//       // Only prevent default if animation is actually gonna happen
-//       event.preventDefault();
-//       $('html, body').animate({
-//         scrollTop: target.offset().top -80
-//       }, 1000, function() {
-//         // Callback after animation
-//         // Must change focus!
-//         var $target = $(target);
-//         $target.focus();
-//         if ($target.is(":focus")) { // Checking if the target was focused
-//           return false;
-//         } else {
-//           $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-//           $target.focus(); // Set focus again
-//         };
-//       });
-//     }
-//   }
-// });   
-
-
-      // gsap.to(".transparent", {
-      //   yPercent: 20,
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: "#intro",
-      //     start: "bottom bottom", // the default values
-      //     // end: "bottom center",
-      //     scrub: true
-      //   }, 
-      // });
+      tl4.from(".slide-in6", {y:20, opacity: 0, duration: 0.3})
 
 
     } else {
@@ -405,45 +257,6 @@ $(document).ready(function(){
           }, 
         });
   
-        // gsap.to(".pVodka", {
-        //   yPercent: 2500,
-        //   xPercent: 20,
-        //   rotate: 2500,
-        //   ease: "none",
-        //   scrollTrigger: {
-        //     trigger: "#intro",
-        //     start: "top top", // the default values
-        //     end: "bottom top",
-        //     scrub: true
-        //   }, 
-        // });
-  
-        // gsap.to(".pVodka2", {
-        //   yPercent: 2000,
-        //   xPercent: -50,
-        //   rotate: -2000,
-        //   ease: "none",
-        //   scrollTrigger: {
-        //     trigger: "#intro",
-        //     start: "top top", // the default values
-        //     end: "bottom top",
-        //     scrub: true
-        //   }, 
-        // });
-
-        gsap.timeline({
-          scrollTrigger: {
-            trigger: "#about .img",
-            start: "center bottom",
-            end: "center center",
-            scrub: true
-          }
-        })
-        .from(".ussr",  { x: innerWidth * (-0.5), ease: "expo" })
-      .from(".glasses",  { y: innerHeight * 0.5, ease: "expo" })
-      .from(".hair", { y: innerHeight * (-0.5), ease: "expo" })
-      .from(".ak", { x: innerWidth * 0.5, ease: "expo" })
-      .from(".cross", { y: innerHeight * 0.5, ease: "expo" });
 
         gsap.to(".pGallery", {
           xPercent: -50,
@@ -471,7 +284,7 @@ $(document).ready(function(){
         
         let tl = gsap.timeline({
           scrollTrigger: {
-            trigger: '#about .transparent',
+            trigger: '.slide-in',
             start: "bottom bottom",
           }
         });
@@ -479,7 +292,7 @@ $(document).ready(function(){
   
         let tl2 = gsap.timeline({
           scrollTrigger: {
-            trigger: '#gallery .transparent',
+            trigger: '.slide-in2',
             start: "bottom bottom",
           }
         });
