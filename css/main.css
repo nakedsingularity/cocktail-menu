@@ -430,9 +430,9 @@ p {
   top: 0;
   left: 0;
   z-index: 20;
-  /* background-color: #36395100;
+  background-color: #36395100;
   backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px); */
+  -webkit-backdrop-filter: blur(50px);
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   width: 100%;
@@ -940,7 +940,7 @@ background-image: url('back3.png');
 
 
 .accent, b {
-  color:#b696e1;
+
 }
 
 #about {
@@ -970,6 +970,12 @@ background-image: url('back3.png');
 .member p {
   margin-bottom: 0;
 }
+
+.member p:not(.score, .recipe_trigger) {
+  font-size: 16px;
+  color: #7b7b7b
+}
+
 
 .member:first-child {
   padding-left: 0;
@@ -1143,6 +1149,7 @@ margin-bottom: 1em;
 #gallery {
   overflow: hidden;
   background-color: #222;
+  z-index: 99999999;
 }
 
 #gallery .section-wrap .text-wrap, #specs .section-wrap .text-wrap {
@@ -1207,7 +1214,7 @@ margin-bottom: 1em;
   margin-bottom: 4px;
   padding: 0px 20px;
   transition: .3s cubic-bezier(0.65, 0.05, 0.36, 1);
-  background-color: #363951;
+  background-color: #373737;
   font-size: 20px;
 }
 
@@ -1224,8 +1231,8 @@ margin-bottom: 1em;
 }
 
 .expanded .faq-name {
-  text-decoration: line-through;
-  color: #b696e1;
+  /* text-decoration: line-through; */
+  color: #7b7b7b;
   /* border: 4px solid #fedd3a; */
   height: auto;
   /* box-shadow: 4px 74px 0px #fedd3a; */
@@ -1769,4 +1776,16 @@ h2 {
 
 .member {
   position: relative;
+}
+
+.logo-border {
+  font-size: 2.3em;
+  border: 8px solid white;
+  padding: 4px 10px;
+  border-style: solid dashed;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto 0.5em;
 }
