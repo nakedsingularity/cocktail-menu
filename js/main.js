@@ -586,18 +586,12 @@ $(document).ready(function(){
    
 
     $(function() {
-
-      // you can also use the whole item as a trigger with this: $('.accordion .accordion-item')
       $('.faq-section-wrap .faq-block').on('click', toggleAccordion);
     
       function toggleAccordion(event) {
         var target = $(event.target).closest('.faq-block');
-    
-        // target.parent('.faq-section-wrap').find('.faq-block').not(target).removeClass('expanded');
         target.toggleClass('expanded');
       }
-      
-      
     });
 
 
@@ -628,13 +622,13 @@ $(document).ready(function(){
 
     
 
-    const recipe = document.querySelector('.recipe');
-    const recipe_trigger = document.querySelector('.recipe_trigger');
-
-
-    recipe_trigger.addEventListener('dblclick', function (e) {
-      recipe.classList.toggle('recipe_show');
-    });
+      $('.recipe_trigger').on('dblclick', showRecipe);
+    
+      function showRecipe(event) {
+        var target = $(this).next().next();
+        target.toggleClass('recipe_show');
+      }
+    
 
 
 
