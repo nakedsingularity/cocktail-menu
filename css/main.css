@@ -430,9 +430,9 @@ p {
   top: 0;
   left: 0;
   z-index: 20;
-  background-color: #36395100;
+  /* background-color: #36395100;
   backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px); */
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   width: 100%;
@@ -998,13 +998,13 @@ background-image: url('back3.png');
 
 .gallery-wrap, .team-wrap, .logo-list {
   margin-top: 10px;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 margin-bottom: 1em;
 }
 
 .divider {
-  margin: 0em 0 2em;
-border-top: 3px solid white;
+  margin: 0em 0 3em;
+  border-top: 2px dashed #575757;
 }
 
 .charity-faq {
