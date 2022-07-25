@@ -21,10 +21,10 @@ html {
     font-size: 1em;
     line-height: 1.4;
 	/* background-color: #FFF; */
-  background-color: #251827;
-  font-family: 'Space Mono', sans-serif;
-  letter-spacing: 0px;
-  word-spacing: -2px;
+  background-color: #222;
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 2px;
+
 }
 
 
@@ -430,7 +430,7 @@ p {
   top: 0;
   left: 0;
   z-index: 20;
-  background-color: #00000075;
+  background-color: #000000a1;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   -webkit-transform: translateZ(0);
@@ -472,7 +472,10 @@ p {
 
 #logo h1 {
   font-size: 1.4em;
-  margin: 0.2em 0;
+  margin: 0.1em 0;
+border: 5px solid white;
+padding: 4px 10px;
+border-style: solid dashed;
 }
 
 #logo img {
@@ -814,7 +817,7 @@ ul {
   /* background-image: url('back.png'), url('sun.png'), url('clouds.png'), url('building.png'); */
   background-size: cover;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 100vh;
   background-position: top;
   border: none;
   padding: 0;
@@ -823,7 +826,7 @@ ul {
 
 @media screen and (min-width: 600px) {
   #intro, #clouds, #sun, #buildings, #cloud1, #cloud2, #cloud3 {
-    height: 120vh;
+    height: 100vh;
   }
 
   #intro .text-wrap {
@@ -833,7 +836,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   #intro, #clouds, #sun, #buildings, #cloud1, #cloud2, #cloud3 {
-    height: 130vh;
+    height: 100vh;
   }
 
   #intro .text-wrap {
@@ -995,10 +998,13 @@ background-image: url('back3.png');
 
 .gallery-wrap, .team-wrap, .logo-list {
   margin-top: 10px;
+  padding-bottom: 1em;
+margin-bottom: 1em;
 }
 
 .divider {
-  margin-top: 4em;
+  margin: 0em 0 2em;
+border-top: 3px solid white;
 }
 
 .charity-faq {
@@ -1201,7 +1207,7 @@ background-image: url('back3.png');
   margin-bottom: 4px;
   padding: 0px 20px;
   transition: .3s cubic-bezier(0.65, 0.05, 0.36, 1);
-  background-color: #6e7188;
+  background-color: #363951;
   font-size: 20px;
 }
 
@@ -1219,7 +1225,7 @@ background-image: url('back3.png');
 
 .expanded .faq-name {
   text-decoration: line-through;
-  color: #fffa69;
+  color: #b696e1;
   /* border: 4px solid #fedd3a; */
   height: auto;
   /* box-shadow: 4px 74px 0px #fedd3a; */
@@ -1515,6 +1521,9 @@ footer {
 
 .footer-links h1 {
 margin: 0;
+border: 5px solid white;
+padding: 4px 10px;
+border-style: solid dashed;
 }
 
 .footer-links .menu-link {
