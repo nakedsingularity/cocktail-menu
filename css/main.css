@@ -91,7 +91,7 @@ html {
 
 .loader img {
   width: 100%;
-	animation: glow alternate 0.5s infinite;
+	/* animation: glow alternate 0.5s infinite; */
 }
 
 .loader h1 {
@@ -1515,7 +1515,7 @@ main {
   filter: blur(0px);
   -webkit-filter: blur(0px);
   opacity: 1;
-  transition: all 0.2s ease;
+  /* transition: all 0.2s ease; */
 
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);

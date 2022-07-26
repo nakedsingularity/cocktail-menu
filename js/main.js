@@ -3,12 +3,16 @@
 $(window).load(function() {
   // setTimeout(function() {
     // $('.loader').addClass('fade');
-    $('.loader').fadeOut(200);
-    $('body').removeClass('lock-oveflow');
-    $('main').addClass('dom-loaded');
-    $('#header-wrap').addClass('dom-loaded');
 
-  // }, 3000);
+    setTimeout(function() {
+    $('.loader img').fadeOut(500);
+    },200);
+
+    setTimeout(function() {
+      $('body').removeClass('lock-oveflow');
+      $('main').addClass('dom-loaded');
+      $('#header-wrap').addClass('dom-loaded');
+    }, 500);
 });
 
 
