@@ -15,7 +15,7 @@ $(window).load(function() {
       $('body').removeClass('lock-oveflow');
       $('main').addClass('dom-loaded');
       $('#header-wrap').addClass('dom-loaded');
-    }, 800);
+    }, 700);
 });
 
 
