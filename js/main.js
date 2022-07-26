@@ -1,18 +1,21 @@
 // $('body').addClass('lock-oveflow');
 
+
+
 $(window).load(function() {
+
   // setTimeout(function() {
     // $('.loader').addClass('fade');
 
     setTimeout(function() {
-    $('.loader img').fadeOut(500);
+      $('.loader img').fadeOut(500);
     },200);
 
     setTimeout(function() {
       $('body').removeClass('lock-oveflow');
       $('main').addClass('dom-loaded');
       $('#header-wrap').addClass('dom-loaded');
-    }, 500);
+    }, 800);
 });
 
 

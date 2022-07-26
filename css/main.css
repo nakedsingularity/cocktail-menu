@@ -91,7 +91,7 @@ html {
 
 .loader img {
   width: 100%;
-	/* animation: glow alternate 0.5s infinite; */
+	/* animation: appear 0.1s; */
 }
 
 .loader h1 {
@@ -1843,12 +1843,12 @@ h2 {
   }
 } */
 
-@keyframes glow {
+@keyframes appear {
   100% {
-    opacity: 1;
+    opacity: 0;
   }
   0% {
-    opacity:0.5;
+    opacity:1;
   }
 }
 
