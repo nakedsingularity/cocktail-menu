@@ -714,7 +714,7 @@ ul {
 
 @media screen and (max-width: 960px) {
   .transparent {
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
 
   html {
