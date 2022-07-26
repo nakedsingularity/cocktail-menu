@@ -91,7 +91,7 @@ html {
 
 .loader img {
   width: 100%;
-	/* animation: spin 0.5s infinite; */
+	animation: glow alternate 0.5s infinite;
 }
 
 .loader h1 {
@@ -1023,8 +1023,13 @@ background-image: url('hero.jpg');
 .gallery-wrap, .team-wrap, .logo-list {
   margin-top: 10px;
   padding-bottom: 1em;
-margin-bottom: 1em;
+  margin-bottom: 2.8em;
 }
+
+ .team-wrap:last-child {
+   margin-bottom: 0;
+ }
+
 
 .divider {
   margin: 0em 0 2em;
@@ -1206,7 +1211,7 @@ margin-bottom: 1em;
 }
 
 .section {
-  padding: 40px 20px 50px;
+  padding: 40px 20px 40px;
   /* background: #1f1827; */
   background: #171717;
   position: relative;
@@ -1837,3 +1842,16 @@ h2 {
       0 0 140px #5271ff;
   }
 } */
+
+@keyframes glow {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity:0.5;
+  }
+}
+
+.lock-oveflow {
+  overflow: hidden;
+}
