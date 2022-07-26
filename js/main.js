@@ -102,7 +102,7 @@ $(document).ready(function(){
       });
 
       gsap.to(".pContentTextDown", {
-        yPercent: 20,
+        yPercent: 30,
         ease: "none",
         scrollTrigger: {
           trigger: ".pSection",
